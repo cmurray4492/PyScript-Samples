@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mddtyZV6fQx1tKbdCkUx9ZxPoO6u9EsZf_VSAOk14q1pKODMCdAqp2Q63VeSOALMXUWiC4NMbUIDUfnAhGG4vpRIzCkmL00DVb9ZMRpTc7UOLyZommIxL19IoBhpNCOpjnxN16uwOLaf9OJQnqd4BWUDVP3WglADOcb5Nv3Xs8yZszkoFjYK9ZYpuq1VEVucu0oATKJng01VTLY4-5oewBTehVAW6vtz71ZKXyqO4t5GDrDiTMTAL0S68oIjGRBUGp-b6QF91srRZTg6w7LkURFIOLLQocSvrEbi8RDNcxlPLOkpkTPyGkEjfKqwfw4i8SYDqyn6Z-q3SE9DN3fbgjKmjZiktV52ziuIzFyUjkZlXhMogcuwfVYF4_2LXxBW-cSGrTrcYuVYQIMZWfnfVPphNjVAHsCf5sZK115506_SdkhR_a8qwUMjANGNWvNXYcj4SqRIv8N6cIhswV7R3g5Nd1kJUBUnoYEqzudYEdBCaUvPfr0kbYIEpxjz76IJj7n3hnwXGtYIKTwtlhrNfi4KO4wsOlzqIfvlv0_-0hhbQbmhaAZJtEkFWf_2Pxa02wZ3mivs2nxA6zu_KDXtIh2ElQ9smFi8fU-YpvxmQ1HvvvS_YuuqCPWJDFfYUB4vAOU7kunXFVr2AmTyO8gt1hhvQYIXsyAtihVvn1B2MwZmvu0QCvKYUU6YkieyS7yN1zXSxnMDXlM0SPNZ_-53QXXVMo-er1mwWPmh9Ip1jY4jzPOTqdpMh7eGacEiiHWwlxjl0sLXFLVd6p77U5UBMQ" charset="UTF-8"></script>
+  
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+
+<body>
+  <div>Type some sample input here</div>
+  <input type="text" id="test-input"/>
+  <button id="submit-button" type="submit" pys-onClick="my_function">OK</button>
+  <div id="test-output"></div>
+
+<py-script>
+from js import console
+
+def my_function(*args, **kwargs):   
+    text = Element('test-input').element.value
+    Element('test-output').element.innerText = text
+	
+</py-script>
+
+  </body>
+</html>

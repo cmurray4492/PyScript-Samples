@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Python REPL</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link rel="stylesheet" href="repl.css" />
+    
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=U9YxdYsDXH_fOYyt498qizXmHULNw_7GKiRuLPL6tICTtEzf6jKwWeRFDtVm6noBUrKlAdPSkYIpZMEz07KciWV_huoZTxKvLrhP7jaD623vASuNdLcghNOCKSSkkWo05Pol8mrSOfeurB-4NJc6ZGFbzx9chKb3iN9fv4YOPobxj3IMTiCu4t5Cl6GKN6Xqjtqa1g0eV6EfSd8XBwjSL-MCNbnOywguS3aoJuZXOGDb-am9wF5wFpOUk3FcbXCUzc4AOq-amaCicUoBCq2EiHm12sbcWaxYZv_bIv9QlGFxrpRRzKRNlOzNiWDo4j8URkDfjAkjQhjVtB_I942fmj-7biDZxF30mldvjsHS5KpJa9ypPDoqKQQswKVlyXVCogm4yXEsMJgdwjLQfWVWBxDbQnVb-oC-jwfahq6IDW_rkcjRn8fO0tiAKNJUOxmH05GHa79rAwwImCWIDPRXv7NnzFeZsgn98eyFTB9TSFFm0L57ahAFtQUEOzjgeAEjFOHw7WPSpetCrcgjWtZTw20z2vQnEkma9EpF4cRcTj9UCHWTwhiAZNdcW5RlhZTotVrUzSTMpCiQvYdXMBIVqooR9ujZoHooQvcWxV9AnCYLE6ABJzunQJvf6Q2Q6X0xadxCBf0qkL70Ta2AYL3b_jTDNFk_SDRTqUOz154vuT9qOIwmMIwUz1jRcON0RZaU3HHrgudKYI0Ax757h4P284W2_Y9py6UPDJukcV5hFVqmJjlThxI-BjgsjuGZMtkKuNT8h2I9fDzZ1NC0dr2Lfg" charset="UTF-8"></script>
+    
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+ 
+
+  <body>
+      <h1 class="font-semibold text-2xl ml-5">Python REPL</h1>
+      <py-box widths="2/3;1/3">
+        <py-repl id="py-repl" auto-generate="true" std-out="output" std-err="err-div"> </py-repl>
+        <div id="output" class="p-4"></div>
+      </py-box>
+      <footer id="err-div" class="bg-red-700 text-white text-center border-t-4 border-green-500 fixed inset-x-0 bottom-0 p-4 hidden">
+    </footer>
+  </body>
+</html>
